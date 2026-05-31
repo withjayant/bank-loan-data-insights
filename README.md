@@ -34,21 +34,21 @@ The **Bank Loan Data Insights** dashboard is built using **Power BI Template (`.
 ## Dashboard Screenshots
 
 ### 📊 Page 1 — Summary
-![Summary Page](screenshots/screenshot_summary.png)
+![Summary Page](screenshot_summary.png)
 
 > High-level KPIs with Good Loan vs Bad Loan breakdown and Loan Status table.
 
 ---
 
 ### 🗺️ Page 2 — Overview
-![Overview Page](screenshots/screenshot_overview.png)
+![Overview Page](screenshot_overview.png)
 
 > Monthly trends, US state map, loan purpose breakdown, employee length analysis, term split, and home ownership distribution.
 
 ---
 
 ### 📋 Page 3 — Details
-![Details Page](screenshots/screenshot_details.png)
+![Details Page](screenshot_details.png)
 
 > Full drill-through table with individual loan records — ID, purpose, grade, sub-grade, funded amount, interest rate, installment, and received amount.
 
