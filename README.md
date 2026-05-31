@@ -6,7 +6,9 @@
 
 ## 📌 Table of Contents
 
-- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Objective](#objective)
+- [Dashboard Overview](#dashboard-overview)
 - [Dashboard Screenshots](#dashboard-screenshots)
 - [Features](#features)
 - [Key Metrics & KPIs](#key-metrics--kpis)
@@ -19,15 +21,72 @@
 
 ---
 
-## Overview
+## Problem Statement
 
-The **Bank Loan Data Insights** dashboard is built using **Power BI Template (`.pbit`)** format. It provides a comprehensive 4-page report enabling analysts, risk officers, and business stakeholders to:
+The current approach to loan data analysis lacks depth and interactivity, hindering the ability to derive meaningful insights for informed decision-making. Traditional reporting methods fall short in providing a comprehensive view of lending operations, borrower behavior, and loan performance metrics.
 
-- Monitor **38.6K** total loan applications worth **$435.8M** funded
-- Track **Good Loans (86.2%)** vs **Bad Loans (13.8%)** in real time
-- Segment borrowers by grade, employment length, home ownership, and purpose
-- Analyze geographic loan distribution across all US states
-- Drill into individual loan records with full details
+There is a pressing need for advanced dashboard design to address these limitations and unlock the full potential of loan data — enabling stakeholders to:
+
+- Understand lending operations end-to-end
+- Track borrower behavior and demographics
+- Monitor loan performance metrics in real time
+- Make strategic decisions based on data-driven insights
+
+---
+
+## Objective
+
+The objective is to craft a suite of **3 interconnected dashboards** that deliver dynamic and comprehensive insights into loan data, empowering decision-makers with actionable intelligence derived from robust data analysis.
+
+These dashboards are meticulously designed to offer a holistic perspective on:
+
+- 📊 Lending operations and financial KPIs
+- 👤 Borrower demographics and behavior
+- 📉 Loan performance and risk classification
+- 💰 Financial metrics and repayment trends
+
+By fulfilling these objectives, the goal is to **optimize lending strategies**, bolster financial health, and elevate borrower satisfaction through insightful data analysis and strategic dashboard design.
+
+---
+
+## Dashboard Overview
+
+### Dashboard 1 — Executive Summary
+**Purpose:** Provides an overview of critical Key Performance Indicators (KPIs) essential for evaluating the overall efficiency and performance of lending operations.
+
+| KPI | Description |
+|---|---|
+| Total Loan Applications | Monitor total and MTD applications with MoM trend analysis |
+| Total Funded Amount | Track cumulative disbursed funds and MTD disbursements with MoM variations |
+| Total Amount Received | Assess cash inflows via total and MTD received amounts with MoM fluctuations |
+| Average Interest Rate | Compute and track average interest rate across all loans with MTD and MoM changes |
+| Average DTI | Evaluate borrowers' financial resilience via average Debt-to-Income ratio with MTD/MoM tracking |
+
+**Loan Performance Classification:**
+- ✅ **Good Loans** — Fully Paid and Current loans (application %, funded amount, received amount)
+- ❌ **Bad Loans** — Charged Off loans (application %, funded amount, received amount)
+- 📋 **Loan Status Grid View** — Detailed categorization by loan status for data-driven decision-making
+
+---
+
+### Dashboard 2 — Trends & Overview
+**Purpose:** Offers interactive visualizations to illuminate lending trends, borrower demographics, and loan purposes — facilitating pattern recognition and opportunity identification.
+
+| Visualization | Type | Insight |
+|---|---|---|
+| Monthly Trends by Issue Date | Line Chart | Seasonality and long-term lending trends |
+| Regional Analysis by State | Filled Map | Significant lending regions and geographical disparities |
+| Loan Term Analysis | Donut Chart | Distribution of loans across different terms |
+| Employment Length Analysis | Bar Chart | Impact of employment history on lending metrics |
+| Loan Purpose Breakdown | Bar Chart | Reasons behind borrowers' financing needs |
+| Home Ownership Analysis | Tree Map | Influence of home ownership on loan applications |
+
+---
+
+### Dashboard 3 — Detailed Insights
+**Purpose:** Offers a deep dive into loan data, equipping users with comprehensive access to key metrics and loan details — empowering fully informed decision-making.
+
+A user-friendly platform providing a comprehensive solution for in-depth analysis of the loan portfolio, augmenting the capacity to make informed lending decisions at the individual loan level.
 
 ---
 
@@ -97,10 +156,9 @@ The **Bank Loan Data Insights** dashboard is built using **Power BI Template (`.
 │
 ├── 📄 README.md                          ← Project documentation
 ├── 📊 Bank_Loan_Data_Insights.pbit       ← Power BI Template file
-└── 📁 screenshots/                       ← Dashboard preview images
-    ├── screenshot_summary.png
-    ├── screenshot_overview.png
-    └── screenshot_details.png
+├── 🖼️ screenshot_summary.png             ← Summary dashboard screenshot
+├── 🖼️ screenshot_overview.png            ← Overview dashboard screenshot
+└── 🖼️ screenshot_details.png             ← Details dashboard screenshot
 ```
 
 ---
@@ -116,7 +174,7 @@ The **Bank Loan Data Insights** dashboard is built using **Power BI Template (`.
 ### Step 1 — Clone or Download
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/bank-loan-data-insights.git
+git clone https://github.com/withjayant/bank-loan-data-insights.git
 ```
 
 Or click **Code → Download ZIP** on this page.
@@ -135,7 +193,15 @@ Or click **Code → Download ZIP** on this page.
 
 ### Step 4 — Refresh
 
-Click **Home → Refresh** — all 4 pages will populate with your data automatically.
+Click **Home → Refresh** — all 3 pages will populate with your data automatically.
+
+---
+
+## Implementation Strategy
+
+- 🎨 Each dashboard is crafted with an **intuitive layout** to ensure seamless navigation and interaction
+- 🔄 Integrated with **real-time data** for up-to-the-minute analysis and decision-making
+- 💬 Incorporates **user feedback mechanisms** to continually refine and enhance dashboard functionalities
 
 ---
 
@@ -188,7 +254,7 @@ Please keep report pages clean, well-labeled, and consistent with the existing v
 
 ## License
 
-This project is licensed under the **MIT License**.  
+This project is licensed under the **MIT License**.
 You are free to use, modify, and distribute this template for personal or commercial purposes with attribution.
 
 ---
